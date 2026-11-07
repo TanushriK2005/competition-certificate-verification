@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📋 Admin Dashboard</h1>
+
+    <!-- ADMIN NAV -->
+    <div style="margin-bottom:15px;">
+        <a href="/admin/add" class="link">➕ Add Certificate</a> |
+        <a href="/admin/logout" class="link">🚪 Logout</a>
+    </div>
+
+    <table>
+        <tr>
+            <th>Cert ID</th>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+        {% for c in certificates %}
+        <tr>
+            <td>{{ c[0] }}</td>
+            <td>{{ c[1] }}</td>
+            <td>{{ c[7] }}</td>
+            <td>
+                <a href="/admin/toggle/{{ c[0] }}">
+                    <button class="secondary-btn">
+                        {% if c[7] == "ACTIVE" %}Revoke{% else %}Activate{% endif %}
+                    </button>
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Certificate</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>➕ Add Certificate</h1>
+
+    <div style="margin-bottom:15px;">
+        <a href="/admin/dashboard" class="link">← Dashboard</a> |
+        <a href="/admin/logout" class="link">🚪 Logout</a>
+    </div>
+
+    <form method="post">
+        <input name="cert_id" placeholder="Certificate ID" required>
+        <input name="student_name" placeholder="Student Name" required>
+        <input name="competition" placeholder="Competition Name" required>
+        <input name="position" placeholder="Position" required>
+        <input name="organizer" placeholder="Organizer" required>
+        <input name="year" placeholder="Year" required>
+        <button>Add Certificate</button>
+    </form>
+</div>
+
+</body>
+</html>

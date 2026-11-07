@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate</title>
+    <link rel="stylesheet" href="/static/certificate.css">
+</head>
+<body>
+
+<div class="certificate">
+    <h1>Certificate of Achievement</h1>
+    <p class="subtitle">This certificate is proudly presented to</p>
+
+    <div class="name">{{ student_name }}</div>
+
+    <p class="center">for outstanding performance in</p>
+    <div class="center"><b>{{ competition }}</b></div>
+
+    <p class="center">Securing <b>{{ position }}</b></p>
+    <p class="center">Organized by <b>{{ organizer }}</b></p>
+
+    <div class="footer">
+        <div>
+            <p><b>Certificate ID:</b> {{ cert_id }}</p>
+            <p><b>Year:</b> {{ year }}</p>
+            <a href="/certificate/pdf/{{ cert_id }}" class="link">
+                ⬇ Download PDF
+            </a>
+        </div>
+        <div>
+            <img src="/certificates/{{ cert_id }}.png">
+            <p>Scan to Verify</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
