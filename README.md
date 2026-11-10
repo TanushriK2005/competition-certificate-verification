@@ -1,17 +1,17 @@
 
-# 🏆 Competition Certificate Verification System
+# 🏆 Competition Certificate Verification System 
 
-A **secure, end-to-end certificate verification platform** built using **Python & Flask** that helps colleges and institutions verify **competition certificates** and detect **fake, tampered, or revoked certificates** using **cryptographic hashing, QR codes, and admin control**.
+A **secure, end-to-end certificate verification platform** built using **Python & Flask** that helps colleges and institutions verify **competition certificates** and detect **fake, tampered, or revoked certificates** using **cryptographic hashing, QR codes, and admin control**. 
 
 This project is designed **from scratch to professional level**, suitable for:
 - 🎓 Final-year / college projects
 - 🧪 Internal college verification systems
 - 💼 Internship & placement demonstrations
-- 🚀 Real-world backend + security learning
+- 🚀 Real-world backend + security learning 
 
 ---
 
-## 📌 Problem Statement
+## 📌 Problem Statement 
 
 Fake and duplicate certificates are commonly used in colleges and job applications.  
 Manual verification is slow, unreliable, and error-prone.
